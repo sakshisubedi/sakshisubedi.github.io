@@ -1,0 +1,89 @@
+@import "../../_globalColor";
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: 250px;
+}
+.card-title {
+  color: $titleColor;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+.card-subtitle {
+  color: $cardSubtitle;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+.publication-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $lightBackground2;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  justify-content: center;
+}
+.publication-card-light {
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.publication-card-dark {
+  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.25s ease;
+  background-color: $darkBackground !important;
+}
+
+.publication-detail {
+  text-align: center;
+}
+.publication-card-light:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+}
+.publication-card-dark:hover {
+  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+}
+.publication-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.publications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.publication-card-footer span.publication-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  .publication-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+}
