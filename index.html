@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sakshi</title>
+    <meta name="description" content="Sakshi Subedi's Portfolio" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpg/sakshi_subedi.jpg"
+              alt="Sakshi Subedi Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Sakshi Subedi</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#education" class="header__link">Education </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#experiences" class="header__link">Experiences </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#blogs" class="header__link">
+                Blogs
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#publication" class="header__link">
+                Publication
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#certifications" class="header__link">
+                Certifications
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#education"> Education </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#experiences"> Experiences </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#blogs"> Blogs </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#publication"> Publication </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#certifications"> Certifications </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Sakshi Subedi</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            A Full Stack Software Engineer with a strong focus on creating innovative and efficient solutions
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#contact" class="btn btn--bg">Contact me</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="mailto:sasubedi@ucsd.edu" class="home-hero__social-icon-link" target="_blank">
+            <img src="data:image/png;base64,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" alt="icon"
+              class="home-hero__social-icon"/>
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/sakshisubedi/" class="home-hero__social-icon-link" target="_blank">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/sakshisubedi" class="home-hero__social-icon-link" target="_blank">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://medium.com/@sakshisubedi" class="home-hero__social-icon-link" target="_blank">
+            <img
+              src="data:image/png;base64,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"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+            <!-- <icon class="fab fa-github"></icon> -->
+          </a>
+        </div>
+        
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I thrive on solving complex problems and enjoy collaborating with cross-functional teams to deliver high-quality software products. 
+            My curiosity and eagerness to learn drive me to stay up-to-date with the latest industry trends and technologies.
+            I am committed to delivering exceptional results and thrive in dynamic and challenging environments.
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Sakshi Subedi</strong>
+                and I'm a <strong> Full Stack Software Engineer </strong> located in
+                California. I'm passionate about leveraging technology to drive innovation and create meaningful solutions.
+              </p>
+              <p class="about__content-details-para">
+                With a solid foundation in <strong>software development</strong>, 
+                I specialize in building <strong>robust</strong> and <strong>scalable</strong> applications.
+              </p>
+            </div>
+            <a href="mailto:sasubedi@ucsd.edu" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">SCSS</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">Next.js</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Redux</div>
+              <div class="skills__skill">Angular</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">Spring Boot</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">PostgreSQL</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">Redis</div>
+              <div class="skills__skill">Firebase</div>
+              <div class="skills__skill">GraphQL</div>
+              <div class="skills__skill">Google Cloud Platform (GCP)</div>
+              <div class="skills__skill">Amazon Web Services (AWS)</div>
+              <div class="skills__skill">Restful APIs</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">Kubernetes</div>
+              <div class="skills__skill">Kafka</div>
+              <div class="skills__skill">Swagger</div>
+              <div class="skills__skill">Linux</div>
+              <div class="skills__skill">Unix</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="education" class="projects sec-pad">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Education</span>
+      </h2>
+      <div class="education-cards-div">
+        <div class="experience-card">
+          <div class="experience-banner" style="background: rgb(21, 36, 67);">
+            <div class="experience-blurred_div">
+
+            </div>
+            <div class="experience-div-company">
+              <h5 class="experience-text-company">University of California, San Diego</h5>
+            </div>
+            <img crossorigin="anonymous" class="experience-roundedimg" src="./assets/png/ucsd.png" alt="UCSD">
+          </div>
+          <div class="experience-text-details">
+            <h5 class="experience-text-role">Master of Science, Computer Science</h5>
+            <h5 class="experience-text-date">September 2022 – June 2024</h5>
+            <p class="subTitle experience-text-desc"></p>
+            <ul style="margin: 2%;" style="list-style-type: disc;">
+              <li style="list-style-type: disc;" class="subTitle">GPA: 4/4</li>
+              <li style="list-style-type: disc;" class="subTitle">Coursework: Principles of Computer Architecture, Recommender Systems and Web Mining, Probalistic Reasoning and Learning.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-banner" style="background: rgb(215, 218, 199);">
+            <div class="experience-blurred_div">
+
+            </div>
+            <div class="experience-div-company">
+              <h5 class="experience-text-company">Mumbai University (V.E.S.I.T)</h5>
+            </div>
+            <img crossorigin="anonymous" class="experience-roundedimg" src="./assets/jpeg/mu.jpeg" alt="mu">
+          </div>
+          <div class="experience-text-details">
+            <h5 class="experience-text-role">Bachelor of Engineer, Computer Engineer</h5>
+            <h5 class="experience-text-date">July 2015 – June 2019</h5>
+            <p class="subTitle experience-text-desc"></p>
+            <ul style="margin: 2%;" style="list-style-type: disc;">
+              <li style="list-style-type: disc;" class="subTitle">CGPA: 9.64/10</li>
+              <li style="list-style-type: disc;" class="subTitle">Ranked 2nd in the Computer Engineering department.</li>
+              <li style="list-style-type: disc;" class="subTitle">Coursework: Data Structures, Analysis of Algorithms, Object Oriented Programming Methodology, Database Management Systems, Structured Programming Approach, Soft Computing, Software Engineering, Computer Organization and Architecture, Artificial Intelligence, Soft Computing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences" class="projects sec-pad">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Experiences</span>
+      </h2>
+      <div class="experience-cards-div">
+        <div class="experience-card">
+          <div class="experience-banner" style="background: rgb(100, 100, 100);">
+            <div class="experience-blurred_div">
+
+            </div>
+            <div class="experience-div-company">
+              <h5 class="experience-text-company">Apple</h5>
+            </div>
+            <img crossorigin="anonymous" class="experience-roundedimg" src="./assets/png/apple.png" alt="Apple">
+          </div>
+          <div class="experience-text-details">
+            <h5 class="experience-text-role">Software Engineer Intern</h5>
+            <h5 class="experience-text-date">June 2023 – September 2023</h5>
+            <p class="subTitle experience-text-desc"></p>
+            <ul style="margin: 1.5rem;">
+              <li style="list-style-type: disc;" class="subTitle">Implemented front end, web services, and distributed systems to support the development and building of Apple’s software.</li>
+              <li style="list-style-type: disc;" class="subTitle">Worked cross-functionally with teams across Apple to improve efficiency and reliability and ship new features or products.</li>
+              <li style="list-style-type: disc;" class="subTitle">Finding multiple solutions to a problem, evaluating tradeoffs, and decide the best approach, and resolving bugs efficiently.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-banner" style="background: rgb(150, 149, 193);">
+            <div class="experience-blurred_div">
+
+            </div>
+            <div class="experience-div-company">
+              <h5 class="experience-text-company">Boolean Lab</h5>
+            </div>
+            <img crossorigin="anonymous" class="experience-roundedimg" src="./assets/jpeg/boolean_lab.jpeg" alt="Boolean Lab">
+          </div>
+          <div class="experience-text-details">
+            <h5 class="experience-text-role">Graduate Student Researcher</h5>
+            <h5 class="experience-text-date">September 2022 – June 2023</h5>
+            <p class="subTitle experience-text-desc"></p>
+            <ul style="margin: 1.5rem;">
+              <li style="list-style-type: disc;" class="subTitle">Building, deploying, and monitoring application server in AWS using Python, Flask, Java, and PHP to visualize and understand scatter plots for biological datasets and boolean analysis to ease the efforts of biologists.</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="experience-card">
+          <div class="experience-banner" style="background: rgb(4, 41, 124);">
+            <div class="experience-blurred_div">
+
+            </div>
+            <div class="experience-div-company">
+              <h5 class="experience-text-company">PayPal</h5>
+            </div>
+            <img crossorigin="anonymous" class="experience-roundedimg" src="data:image/png;base64,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" alt="PayPal">
+          </div>
+          <div class="experience-text-details">
+            <h5 class="experience-text-role">Software Engineer 2</h5>
+            <h5 class="experience-text-date">July 2022 – August 2022</h5>
+            <p class="subTitle experience-text-desc"></p>
+            <ul style="margin: 1.5rem;">
+              <li style="list-style-type: disc;" class="subTitle">Developed platforms intended to aid in fault detection, issue communication, tirage, and resolution of FinTech products using excellent problem-solving skills and technologies like React, Java, and Node.js in the Site Reliability Engineering (SRE) team.</li>
+              <li style="list-style-type: disc;" class="subTitle">Minimized the impact of bad change releases by 20% by validating changes before and during releases.</li>
+              <li style="list-style-type: disc;" class="subTitle">Responsible for minimizing the impact of bad change releases by validating changes prior to and during releases.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="experience-card">
+          <div class="experience-banner" style="background: rgb(11, 21, 45);">
+            <div class="experience-blurred_div"></div>
+            <div class="experience-div-company">
+              <h5 class="experience-text-company">Paytm Insider</h5>
+            </div>
+            <img crossorigin="anonymous" class="experience-roundedimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA0lBMVEX////sEGYMFy8xwPAAFy3rAF3rAGAADioJAB3sAGPvEGfrAFzrAFczx/glvvDt+f4XT2s9FjcFEyzr7O396/HY2dwAABD83+gAABTuQXxUyPIACSnwX47qAFX+8/e96Pn709/2o7v1kbD4vtD1m7fuL3T4s8jzg6bvUIX83ef0iqvS7/sAACUAAAv3rcP5xtbyeJ7xapbuM3X4t8rn9/2K1/VpzvOs4viC1fXxbJZW0vmw4/g8ACic3ffZ8vxGS1m4ub4jKz7MzdF8f4ducXvQ0dTN8uNwAAAGT0lEQVR4nO3b+1fbNhTAcZvMBiPPbJRX0hBCHhAyChm0rF3Xlnbr//8vzXlALD+le68jK+d+f+o5LRx9KluyFXAcjuM4juM4juM4juM4juM4juM4juM4juM4juM4juO4RL3+1eVgOhjd3Z+aHkodDWfjUAjP933PE6E/Gd2YHhFp/U9C+IGbKPDC8WXP9Lio6rdD380WeOJ6K4y97nmQ41vki5Hp4eEbirz5e02MbV91Zudlvvm1Gt6ZHiOqiagAxoXXpkeJqF16hb5eqX+aHic4NWA8i7auN6pA1z2/Mj1WUOrAmNg3PVpAOkA3COzb+7WA8d7fNT1g3TSB8WozND1kvbSBcabHrBUE6Nm0ZUCA8WpjetjqwYCusGZTBALdoG165IpBgfFyemR67ErBga53aXrwKiGAbmDDro8Bxg82podfHQ7oho0/0UACXXFvWlARFtj4paZfdehUmT8wbajIDYXnF56NqggbfybVH45mD6EAK/2ZaYFSvfvpOPcUfxvm8LXTgSsAE9n4+1Bq2A61jU1fS9P126GmUFh2khHPo+tpCZv/TJNtqnWpeqaHC6nvqi+rwcT0aGF1FT5+Wk2hZQvNawPVpzlL3vFzulIjkp/T9OLovtvBwUHxXw6ViOKRbDRHw+nEFWGccCfXV8hr4/3nD51WtKj19OUiF6pEpDovPRpJz8aBL8LxALwPff2wwLVWzf/c+SsHqXChCprP8/vd0MvsUIEftkFv1xedNW5dFD29z/zTQdWKGozRuLibSdEGHIQP2saLVg7vxZiZx27FvkjyGel18Y/uzI1drYXnoFPkWxq/pL/ALX26EVO877TqIdHXOQi6yLs+JWMnNY03Zc/hPsFO8ajwhHiu/H72scK3mMY/5K8ZFP8PBy5+4xopbUnhJ7Xv9lQNnBsv5K8aF/0fBwH+aWag+KomlA7WS2/BYuJ9wSAogHfK76KeAlEVGBPlC3WSO4kUwHuNk8xqojowJko7403eOCiAPa2TryqiDjBO+tqcSaQAOhO9s71yoiYw+pj84n7mbiEBXukeCJURNYHpWzG9nJIAHf3T2WKiNrAlX6eX8p5IAxzpnXeVEiFAacs4kq4nGqADABYRIcDUJLYTlykR8A4kzCUCgdKdmLiiiIDOA/CDoCwRCGxFT4lvsn7+pgKe6i6khUQoMCYm3zJe1j0qIGidySXCgfJas9r0yYAFj4L6RARQ3vWnPi0QsBnmEjHAlrSaPnq0QPhtKBGRwCgxor4gBTpD5Q8NyohIYCv6uh7R0TkpMP2UBCNigfJS44aUwNV9jUl0/8YCW9HnxJB6Q9JfPJhhhfv7//z2K1qYOVqk6xop3N///Zc9NLFOIXIO58CdHTSxTiHuPlwC8UTpPiQOtZa+ANHE9MEpZZj9cA3EEpP7IXWlHxaoA5HEqOTzYXTgq1QGIok1AsHvFmkghiifKFIHfD/MAhHEOhca6MtFHhBOjKqHiQlyTpMPhBKlc5oautPfL4qAQGL6k1LytOewGAgjdmoGOpeak1gGhBDrXWcWlf8QhB5QnxjVPoV6n49WArWJUfanh+ibqe+J1UBNYp0vTokKfwgCAtQibuIanddT/C0WNaAGMar1iTTZqdLvd6gC1Ym1vlToE9WBysTNAWNi9ocuEUBF4iaB1UQ9oApxg5fosptSoi5QgbhpYPks6gMriZsHli03EGAF0QSweBZhwFKiGWAREQosIZoC5hPhwEKiOWDeiooBFhBNArOziAPmEs0C00QsMEvc+EZfTsQDM0TzwCSRApgiNgG4JtIAk8QGXKLLlisqFTBBbApwOYt0wFdic4ALIiFwRWwScE6kBM6JDQM6zvHJIaVwd++NaVGm4zNC4u7b5gFJic0EEhKbCiS7F5sLJCI2GUhCbDaQ4F5sOhBNbD4QSbQBiLoX7QAiiLYAwUR7gMB70SYgiGgXEEC0Dah9L9oH1CTaCNQi2gnUuBdtBSoT7QUqEm0GKt2LdgMViLYDK4n2AyvuxW0AlhK3A1hC3BZg4b24PcAC4jYBY+Le2zTw9nCbgI7z5ps8jYcn30wPibzn7ye3uyve7dnOs+nx1NGPf7+/Ozk7O3m389+z6bHU1/HPn8fbdf9xHMdxHMdxHMdxHMdxHMdxHMdxHMdxHMdV9z/3Kqa0Ozfi/gAAAABJRU5ErkJggg==" alt="Paytm Insider">
+          </div>
+          <div class="experience-text-details">
+            <h5 class="experience-text-role">Full Stack Software Engineer</h5>
+            <h5 class="experience-text-date">June 2021 – July 2022</h5>
+            <p class="subTitle experience-text-desc"></p>
+            <ul style="margin: 1.5rem;">
+              <li style="list-style-type: disc;" class="subTitle">
+                Designed and deployed multi-tier, high-performance, reliable, and mission-critical scalable software using Java, ReactJS, Node.js, Express.js, MongoDB, AWS, and Kafka that operates 24/7 for billions of users. 
+              </li>
+              <li style="list-style-type: disc;" class="subTitle">
+                Debug, troubleshoot, and fix critical production issues, employ unit and end-to-end tests, and significantly reduced latency from 250ms to 100ms by optimizing database queries, indexing databases, and caching data on the website.
+              </li>
+              <li style="list-style-type: disc;" class="subTitle">
+                Collaborated with cross-functional teams in design, product, and other business units to build modular, reusable components. Served as team leader and did code review for 10 juniors.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-banner" style="background: rgb(37, 180, 133);">
+            <div class="experience-blurred_div"></div>
+            <div class="experience-div-company">
+              <h5 class="experience-text-company">Quantiphi</h5>
+            </div>
+            <img crossorigin="anonymous" class="experience-roundedimg" src="data:image/png;base64,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" alt="Quantiphi">
+          </div>
+          <div class="experience-text-details">
+            <h5 class="experience-text-role">Senior Software Developer</h5>
+            <h5 class="experience-text-date">July 2019 – June 2021</h5>
+            <p class="subTitle experience-text-desc"></p>
+            <ul style="margin: 1.5rem;">
+              <li style="list-style-type: disc;" class="subTitle">
+                Spearheaded agile full-stack web development for 7 different client projects and cultivated expertise with GCP.
+              </li>
+              <li style="list-style-type: disc;" class="subTitle">
+                Deployed client-server infrastructure on Google App Engine (GAE), and Google Kubernetes Engine (GKE) using Docker containers and automated with GitLab CI/CD pipelines focusing on high availability, fault tolerance, and autoscaling.
+              </li>
+              <li style="list-style-type: disc;" class="subTitle">
+                Awarded “Rising Star Ace of Initiative” and mentored 50 new employees with code best practices.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects sec-pad">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+      </h2>
+
+        <div class="blog-text-div">
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" >
+                  <h3 class="blog-title">
+                    Covid Application
+                  </h3>
+                  <p class="small">
+                    Covid Application to tracker count of COVID cases across globe and find vaccination centres in India using either pin code or by selecting district.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" >
+                  <h3 class="blog-title">
+                    Portfolio Tracker
+                  </h3>
+                  <p class="small">
+                    API service for portfolio tracking that allows adding, removing, and modifying trades as well as performing simple return calculations.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" >
+                  <h3 class="blog-title">
+                    Taggit Platform
+                  </h3>
+                  <p class="small">
+                    Developed a web-based annotation tool and achieved ~99% accuracy in masking personally identifiable information and saved taggers' manual effort up to 5-6 hours.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" >
+                  <h3 class="blog-title">
+                    SBA-PPP Loan Application Portal
+                  </h3>
+                  <p class="small">
+                    Increased throughput by 60% by automating the process of document validation and thus saving loan underwriters time.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" >
+                  <h3 class="blog-title">
+                    Google Retail Demo
+                  </h3>
+                  <p class="small">
+                    Reduced memory consumption of the micro-services by 75% through code optimization. Shorten project delivery time by 20% by designing and developing various developer tools, APIs, and microservices.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" >
+                  <h3 class="blog-title">
+                    U-Service Tool
+                  </h3>
+                  <p class="small">
+                    Created a tool that provisions read-only access to the data present in the BigQuery data lake to other projects using shared datasets and authorized views.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" >
+                  <h3 class="blog-title">
+                    Drought Prediction and River Network Optimization in Maharashtra Region
+                  </h3>
+                  <p class="small">
+                    Developed a web application that forecasted the onset of drought in the Marathwada region of Maharashtra and provided cost-effective ways to re-route the natural water sources.
+                  </p>
+                </a>
+              </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="blogs" class="projects sec-pad">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Blogs</span>
+      </h2>
+
+      <!-- <div class="blog-main-div"> -->
+        <div class="blog-text-div">
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" target="_blank" href="https://medium.com/@sakshisubedi/recursive-component-in-angular-a229d871a006">
+                  <h3 class="blog-title">
+                      Recursive Component In Angular
+                  </h3>
+                  <p class="small">
+                      It explains on how to utilize Angular Component in itself recursively to make a tree-structure that will render a nested JSON object without doing any CSS.
+                  </p>
+                  <div class="go-corner">
+                    <div class="go-arrow">→</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" target="_blank" href="https://medium.com/@sakshisubedi/initializing-the-firebase-dynamically-in-angular-after-getting-the-configuration-via-an-http-call-526cd901cce8">
+                  <h3 class="blog-title">
+                    Initializing the Firebase dynamically in angular after getting the configuration via an HTTP call
+                  </h3>
+                  <p class="small">
+                    We usually include the “firebaseConfig” in environment.ts file in Angular. But there might be a need where we don’t want to expose the Firebase configuration in client-side and fetch this configuration via an HTTP call. The blog explains the steps on how to achieve it.
+                  </p>
+                  <div class="go-corner">
+                    <div class="go-arrow">→</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="blog-container">
+                <a class="blog-card" target="_blank" href="https://medium.com/@sakshisubedi/optimizing-event-handler-of-input-without-affecting-browser-and-application-performance-in-react-js-7fc4f39b0889">
+                  <h3 class="blog-title">
+                    Optimizing event handler of input without affecting browser and application performance in React.js
+                  </h3>
+                  <p class="small">
+                    It explains various approaches on how to optimize event handler of input without affecting browser and application performance in React.js
+                  </p>
+                  <div class="go-corner">
+                    <div class="go-arrow">→</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+      <!-- </div> -->
+    </section>
+
+    <section id="publication" class="projects sec-pad">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Publication</span>
+      </h2>
+
+      <!-- <div class="blog-main-div"> -->
+        <div class="blog-text-div" style="grid-template-columns: none;">
+            <div>
+              <div class="blog-container" style="height: auto;">
+                <a class="blog-card" target="_blank" href="https://link.springer.com/chapter/10.1007/978-981-13-9942-8_37">
+                  <h3 class="blog-title">
+                    Drought Prediction and River Network Optimization in Maharashtra Region
+                  </h3>
+                  <p class="small" style="padding: 0px 20px 20px 20px;">  
+                    Author: Sakshi S, Krutika P, Girisha N, Saili K, Priya R, “Drought Prediction and River Network Optimization in Maharashtra Region”. SPRINGER, Advances in Computing and Data Sciences Series, 2019.
+                  </p>
+                  <div class="go-corner">
+                    <div class="go-arrow">→</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+      <!-- </div> -->
+    </section>
+
+    <section id="certifications" class="projects sec-pad">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Certifications</span>
+      </h2>
+
+      <div class="achievement-cards-div">
+        <div class="certificate-card">
+          <a class="blog-card" target="_blank" href="https://www.credential.net/84910158-dec8-4a24-a6a8-e8a5fec3bdea">
+            <div class="certificate-image-div">
+
+              <div class="go-corner">
+                <div class="go-arrow">→</div>
+              </div>
+              <img
+                src="./assets/png/gcp.png"
+                alt="gcp"
+                class="card-image"
+              ></img>
+            </div>
+            <div class="certificate-detail-div">
+              <h5 class="card-title">
+                Google Cloud | Associate Cloud Engineer
+              </h5>
+              <p class="card-subtitle">
+                Completed Certification for Associate Cloud Engineer conducted by Google Cloud
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="certificate-card">
+          <a class="blog-card" target="_blank" href="https://drive.google.com/file/d/1x5lBxaAN00hSrIluMhvWgy5apZRdmkdV/view">
+            <div class="certificate-image-div">
+              <div class="go-corner">
+                <div class="go-arrow">→</div>
+              </div>
+              <img
+                src="./assets/png/riidl.png"
+                alt="riidl.png"
+                class="card-image"
+              ></img>
+            </div>
+            <div class="certificate-detail-div">
+              <h5 class="card-title">
+                Big Data Analytics and Machine Learning
+              </h5>
+              <p class="card-subtitle">
+                Successfully completed Big Data Analytics and Machine Learning Intensive 30 Day Workshop conducted by MIT FABLAB, notemybook and riidl
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="certificate-card">
+          <a class="blog-card" target="_blank" href="https://drive.google.com/file/d/1g8RaGspI1OeME5qTn0IpkF_0ncpjNY8S/view">
+            <div class="certificate-image-div">
+              <div class="go-corner">
+                <div class="go-arrow">→</div>
+              </div>
+              <img
+                src="./assets/png/ace.png"
+                alt="ace"
+                class="card-image"
+              ></img>
+            </div>
+            <div class="certificate-detail-div">
+              <h5 class="card-title">
+                Rising Star - Ace of the Initiative award
+              </h5>
+              <p class="card-subtitle">
+                Awarded the Rising Star - Ace of the Initiative award at Quantiphi Inc. for solving problem statements within very stringent timelines.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <footer id="contact" class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="mailto:sasubedi@ucsd.edu">
+                <img
+                  class="main-footer__icon"
+                  src="data:image/png;base64,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"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sakshisubedi/">
+                <img
+                  class="main-footer__icon"
+                  src="https://www.citypng.com/public/uploads/preview/hd-white-square-outline-linkedin-in-icon-symbol-png-31623972553hxk4l9ziuw.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/sakshisubedi">
+                <img
+                  class="main-footer__icon"
+                  src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://medium.com/@sakshisubedi">
+                <img
+                  class="main-footer__icon"
+                  src="https://seeklogo.com/images/M/medium-logo-93CDCF6451-seeklogo.com.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Sakshi Subedi</h4>
+            <p class="main-footer__short-desc">
+              A Full Stack Software Engineer with a strong focus on creating innovative and efficient solutions
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Made by Sakshi Subedi
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
